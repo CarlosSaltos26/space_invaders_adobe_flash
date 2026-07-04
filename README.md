@@ -2,8 +2,6 @@
 
 ¡Hola! :) En este repositorio les comparto un proyecto muy especial: un mini juego estilo *Space Invaders* llamado **Blackhole War** que desarrollé de forma nativa para dispositivos Android. Fue un gran reto técnico en su momento, ya que diseñé toda la interfaz desde cero y programé la lógica del juego para que reaccionara a los sensores físicos del teléfono (Esto lo hice en mi etapa de docente en La Metro Design).
 
-Para poder ver el juego en acción, puedes revisar las capturas de la pantalla de inicio en `image_aefc21.png` y del gameplay en `image_aefc3f.png`.
-
 ## 🚀 ¿Cómo lo construí y cómo se juega?
 
 Este juego combinó el diseño vectorial con la programación de eventos móviles de la siguiente manera:
