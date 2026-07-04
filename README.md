@@ -1,30 +1,40 @@
-# App de Investigación - Universidad Ikiam (Angular SPA)
+# Blackhole War - Mini Juego para Android (Adobe Flash & AS3)
 
-¡Hola! En este repositorio comparto el código de la **aplicación web de investigación** que desarrollé para la Universidad Regional Amazónica Ikiam. Este proyecto nació con el objetivo de crear un espacio moderno, rápido y totalmente dinámico donde se pudieran centralizar y mostrar los proyectos científicos, las líneas de investigación y las publicaciones de los docentes de la institución.
+¡Hola! :) En este repositorio les comparto un proyecto muy especial: un mini juego estilo *Space Invaders* llamado **Blackhole War** que desarrollé de forma nativa para dispositivos Android. Fue un gran reto técnico en su momento, ya que diseñé toda la interfaz desde cero y programé la lógica del juego para que reaccionara a los sensores físicos del teléfono (Esto lo hice en mi etapa de docente en La Metro Design).
 
-Esta aplicación fue diseñada como una SPA (Single Page Application) y la integré con éxito dentro del portal web principal de la universidad.
+Para poder ver el juego en acción, puedes revisar las capturas de la pantalla de inicio en `image_aefc21.png` y del gameplay en `image_aefc3f.png`.
 
-## 🚀 ¿Qué hace esta aplicación y cómo la construí?
+## 🚀 ¿Cómo lo construí y cómo se juega?
 
-El propósito principal fue transformar la forma en que se visualiza la ciencia en la universidad, creando una experiencia fluida para el usuario:
+Este juego combinó el diseño vectorial con la programación de eventos móviles de la siguiente manera:
 
-* **Desarrollo a la medida:** Desarrollé la aplicación desde cero utilizando el framework **Angular**, aprovechando su potencia para manejar datos en tiempo real y crear una interfaz limpia y ordenada.
-* **Navegación instantánea:** Al ser una aplicación de una sola página, logré que los usuarios puedan buscar investigadores, filtrar por proyectos o revisar publicaciones científicas de forma inmediata, sin que la página tenga que recargarse a cada rato, también es una ayuda/guía para los alumnos, para que sepan quién va a estar a cargo de su enseñanza.
-* **Integración transparente:** Uno de mis mayores desafíos fue acoplar esta app dentro de un sitio web estructurado en HTML5 puro. Trabajé a fondo en el enrutamiento y los estilos para que el cambio entre el portal principal y esta herramienta de investigación sea completamente imperceptible para el usuario.
+* **Diseño e Interfaz:** Diseñé todos los elementos visuales (la nave, los ovnis enemigos, los planetas y los botones) en **Adobe Illustrator** para que fueran vectores limpios. Luego, importé todo a **Adobe Flash** como movieclips para armar las escenas y las animaciones.
+* **Movimiento con el Acelerómetro:** En lugar de usar botones clásicos para mover la nave, programé el juego en **ActionScript 3 (AS3)** para que consumiera los datos del acelerómetro del teléfono. Así, el jugador solo tenía que inclinar el celular hacia la izquierda o derecha para dirigir la nave.
+* **Disparos táctiles:** Diseñé un botón con forma de mira en la esquina inferior derecha de la pantalla (como puedes ver en `image_aefc3f.png`). Programé los eventos de la pantalla táctil (*touch screen events*) para que, al presionarlo, la nave abriera fuego contra los invasores.
 
-## 🛠️ Herramientas que utilicé
+## 🛠️ Tecnologías y herramientas que utilicé
 
-* **Framework Principal:** Angular (HTML, TypeScript y SCSS).
-* **Gestión de Datos:** Consumo de datos dinámicos para organizar la información de los investigadores.
-* **Estilos y Maquetación:** Diseño responsivo y adaptable para que se vea genial tanto en computadoras como en celulares.
+* **Diseño Gráfico:** Adobe Illustrator.
+* **Entorno de Desarrollo y Animación:** Adobe Flash Player / Adobe Animate.
+* **Lenguaje de Programación:** ActionScript 3 (AS3).
+* **Despliegue Móvil:** Adobe AIR (para compilar y empaquetar el instalador `.apk`).
 
-## 💡 Lo que aprendí y mis mayores retos
+## 📸 Capturas del Proyecto
 
-Este proyecto fue una gran oportunidad para poner a prueba mis habilidades de integración y optimización:
+Aquí puedes ver cómo quedó el diseño visual y la interfaz del juego:
 
-1. **Modularidad y orden:** Estructuré la aplicación en componentes limpios y reutilizables, lo que facilita un montón el mantenimiento o la adición de nuevas funciones en el futuro.
-2. **Romper barreras tecnológicas:** Conectar e incrustar una aplicación moderna en Angular dentro de una estructura estática tradicional fue un reto técnico muy bonito que requirió mucha paciencia con el manejo de rutas y estilos globales.
-3. **Enfoque en el usuario:** Me aseguré de que la búsqueda y visualización de la información científica fuera intuitiva, pensando siempre en estudiantes, evaluadores y otros científicos que visitan el portal.
+<p align="center">
+  <img src="img/inicio.png" alt="Pantalla de Inicio" width="40%"/>
+  <img src="img/pantalla2.png" alt="Gameplay del juego" width="40%"/>
+</p>
+
+## 💡 Los mayores desafíos de este proyecto
+
+Llevar un juego de la computadora al celular en esa época tuvo retos muy interesantes:
+
+1. **Optimización móvil:** Controlar que la cantidad de enemigos y disparos en pantalla no bajaran los fotogramas por segundo (*FPS*) del celular, manteniendo la experiencia fluida.
+2. **Eventos físicos del hardware:** Lograr la calibración correcta del acelerómetro para que el movimiento de la nave se sintiera natural y no demasiado brusco o lento.
+3. **El empaquetado y firmado:** Uno de los dolores de cabeza más comunes de la época era crear correctamente la llave de seguridad autofirmada dentro de Adobe Flash para que se pudiera exportar el archivo APK sin errores, permitiendo instalarlo directamente en cualquier dispositivo Android con permisos de administrador.
 
 ---
-*Proyecto desarrollado con mucho entusiasmo para visibilizar el talento científico y los proyectos de investigación de la U Ikiam.*
+*Un proyecto que disfruté muchísimo programando y que me permitió explorar el potencial de los sensores físicos en los inicios del desarrollo de videojuegos móviles con Adobe Flash y AS3.*
